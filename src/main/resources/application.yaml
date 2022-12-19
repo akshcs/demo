@@ -1,0 +1,21 @@
+server:
+  port: 8082
+  servlet:
+    context-path: '/Demo'
+management:
+  endpoints:
+    web:
+      exposure:
+        include: '*'
+  info:
+    env:
+      enabled: true
+info:
+  application:
+    name: Demo-Application
+    description: An Application to Demo Deploy
+    author: Akash Singh
+    version: '@project.version@'
+spring:
+  profiles:
+    active: dev
